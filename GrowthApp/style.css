@@ -1,0 +1,530 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600&display=swap");
+
+:root {
+  --light-grey: #e5e5e5;
+  --grey: #171717;
+  --dark-grey: #0a0a0a;
+  --main-blue: #60a5fa;
+  --accent-blue: #bfdbfe;
+}
+
+/* *************** */
+/* GENERAL STYLING */
+/* *************** */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #fff;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: var(--dark-grey);
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container-sm {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* CARD */
+.card {
+  background: #fff;
+  color: var(--dark-grey);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+/* TEXT ELEMENTS */
+.text-xxl {
+  font-size: 3rem;
+  line-height: 1.2;
+  font-weight: 600;
+  margin: 40px 0 20px;
+}
+
+.text-xl {
+  font-size: 2.2rem;
+  line-height: 1.4;
+  font-weight: 400;
+  margin: 40px 0 20px;
+}
+
+.text-lg {
+  font-size: 1.8rem;
+  line-height: 1.4;
+  font-weight: 400;
+  margin: 30px 0 20px;
+}
+
+.text-md {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  font-weight: 400;
+  margin: 20px 0 10px;
+}
+
+.text-sm {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  font-weight: 400;
+  margin: 10px 0 5px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* BACKGROUND ELEMENTS */
+.bg-primary {
+  background: var(--main-blue);
+  color: #fff;
+}
+
+.bg-light {
+  background: #fff;
+  color: var(--dark-grey);
+}
+
+.bg-dark {
+  background: var(--dark-grey);
+  color: #fff;
+}
+
+/* ************ */
+/* NAVIGATION */
+/* *********** */
+.navbar {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .main-menu ul {
+  display: flex;
+}
+
+.navbar ul li a {
+  padding: 10px 20px;
+  display: block;
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+.navbar ul li a:hover {
+  color: var(--main-blue);
+}
+
+.navbar ul li a i {
+  margin-right: 10px;
+}
+
+.navbar ul li:last-child {
+  margin-left: 10px;
+}
+
+/* ************* */
+/* HERO SECTION */
+/* ************* */
+.hero {
+  margin-bottom: 50px;
+}
+
+.hero .container {
+  background: url("images/hero-bg.png") no-repeat;
+  background-size: contain;
+  background-position: center bottom;
+  height: 550px;
+}
+
+.hero .hero-content {
+  width: 70%;
+}
+
+.hero .hero-text {
+  width: 70%;
+  margin-bottom: 20px;
+}
+/* ************** */
+/* VIDEO SECTION */
+/* ************** */
+.video {
+  padding: 10px 0 40px;
+}
+
+.video-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video-preview {
+  margin-bottom: 20px;
+}
+
+/* ******************** */
+/* TESTIMONIAL SECTION */
+/* ******************* */
+.testimonials {
+  padding: 40px 0;
+}
+
+.testimonials .testimonials-heading {
+  width: 700px;
+  margin-bottom: 40px;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.testimonials .card p:nth-child(2) {
+  margin-top: 30px;
+  font-weight: 600;
+}
+
+/* **************** */
+/* PRICING SECTION */
+/* *************** */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.pricing .pricing-card-subheading {
+  margin-bottom: 30px;
+}
+
+.prcing .pricing-card-price {
+  margin-bottom: 30px;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--grey);
+}
+
+.pricing ul {
+  margin: 30px 0;
+}
+
+.pricing ul li {
+  margin-bottom: 20px;
+}
+
+.pricing ul li i {
+  margin-right: 10px;
+}
+
+.pricing .pricing-footer {
+  margin: 30px 0;
+}
+
+/* ************ */
+/* FAQ SECTION */
+/* *********** */
+.faq {
+  padding: 40px 0;
+}
+
+.faq .faq-group {
+  border-bottom: 1px solid var(--grey);
+  padding-bottom: 20px;
+}
+
+.faq .faq-group .faq-group-header {
+  padding: 20px 0;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.faq .faq-group .faq-group-header h4 {
+  font-weight: 600;
+  width: 95%;
+}
+.faq .faq-group .faq-group-header i {
+  position: absolute;
+  right: 0;
+  top: 45px;
+  font-size: 18px;
+}
+
+.faq .faq-group .faq-group-body {
+  display: none;
+}
+
+.faq .faq-group .faq-group-body.open {
+  display: block;
+}
+
+.faq ul.faq-menu {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--light-grey);
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.faq ul.faq-menu li {
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.faq ul.faq-menu li.active {
+  background: var(--main-blue);
+  color: #fff;
+}
+
+/* ******* */
+/* FOOTER */
+/* ****** */
+.footer {
+  padding: 40px 0;
+}
+
+.footer h4 {
+  margin-bottom: 10px;
+}
+
+.footer ul li {
+  line-height: 2.5;
+}
+
+.footer a {
+  color: var(--light-grey);
+}
+
+.footer i {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.footer .footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .card {
+  margin: 20px 30px 30px 0px;
+}
+
+.footer input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--grey);
+  margin: 20px 0;
+}
+
+/* BUTTONS */
+.btn {
+  display: inline-block;
+  padding: 13px 20px;
+  background-color: var(--light-grey);
+  color: var(--dark-grey);
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  text-align: center;
+  transform: 0.5s;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn-primary {
+  background-color: var(--main-blue);
+  color: #fff;
+}
+
+.btn-dark {
+  background-color: var(--dark-grey);
+  color: #fff;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+/* **************** */
+/* MOBILE MENU */
+/* HAMBURGER BUTTON */
+/* *************** */
+.hamburger-btn {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 3;
+}
+
+.hamburger-btn .hamburger-line {
+  width: 30px;
+  height: 3px;
+  background: var(--dark-grey);
+  margin: 6px 0;
+}
+
+/* MOBILE MENU */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 250px;
+  height: 100%;
+  z-index: 2;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px var(--grey);
+  transition: right 0.3s ease-in-out;
+}
+
+.mobile-menu.active {
+  right: 0px;
+}
+
+.mobile-menu ul {
+  margin-top: 100px;
+  padding-right: 10px;
+}
+
+.mobile-menu ul li {
+  margin: 10px 0;
+}
+
+.mobile-menu ul li a {
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+/* ************** */
+/* MEDIA QUERIES */
+/* ************* */
+@media (max-width: 960px) {
+  .text-xxl {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 670px) {
+  /* ***************** */
+  /* GENERAL STYLING */
+  /* ***************** */
+  .text-xl {
+    font-size: 1.9rem;
+  }
+
+  .text-lg {
+    font-size: 1.5rem;
+  }
+
+  .text-md {
+    font-size: 1.1rem;
+  }
+
+  /* ************** */
+  /* NAVIGATION */
+  /* ************** */
+  .navbar .main-menu {
+    display: none;
+  }
+
+  .navbar .hamburger-btn {
+    display: block;
+  }
+
+  /* *************** */
+  /* HERO SECTION */
+  /* *************** */
+  .hero .container {
+    background: url("images/hero-bg-mobile.png") no-repeat;
+    background-size: 350px;
+    background-position: bottom;
+    height: 770px;
+  }
+
+  .hero .hero-content,
+  .hero .hero-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero .hero-btns .btn {
+    margin-bottom: 10px;
+    display: block;
+    width: 100%;
+  }
+
+  /* ************** */
+  /* TESTIMONIALS */
+  /* ************** */
+  .testimonials .testimonials-heading {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  /* TESTIMONALS & PRICING GRID ADJUSTMENTS */
+  .testimonials .tesimonials-grid,
+  .pricing .pricing-grid,
+  .footer .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* ********* */
+  /* FOOTER */
+  /* ********* */
+  .footer .card {
+    margin-right: 0;
+  }
+
+  .footer .footer-grid > div {
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .text-xxl {
+    font-size: 2rem;
+  }
+}
